@@ -1,0 +1,9 @@
+.venv
+.git
+.github
+evidence
+__pycache__
+.pytest_cache
+test_app.py
+requirements-dev.txt
+README.md
