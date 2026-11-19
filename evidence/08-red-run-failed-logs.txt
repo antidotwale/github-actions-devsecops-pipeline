@@ -1,0 +1,1177 @@
+secrets-scan	Scan full git history	﻿2026-11-19T11:07:32.2155735Z ##[group]Run ./gitleaks git . --redact --no-banner --verbose
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2156201Z ^[[36;1m./gitleaks git . --redact --no-banner --verbose^[[0m
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2182467Z shell: /usr/bin/bash -e {0}
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2182766Z env:
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2182998Z   GITLEAKS_VERSION: 8.30.1
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2183365Z   GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2183749Z   TRIVY_VERSION: 0.76.1
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2184061Z   TRIVY_SHA256: c7cbe3137fb8a48a17574bede3dd6beb16742d1e9772929940fc90082c39d9c0
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2184437Z   SEMGREP_VERSION: 1.186.0
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2184675Z   CHECKOV_VERSION: 3.4.5
+secrets-scan	Scan full git history	2026-11-19T11:07:32.2184902Z ##[endgroup]
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5604164Z Finding:     API_SECRET = "^[[1;3;mREDACTED^[[0m"
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5604713Z Secret:      ^[[1;3;mREDACTED^[[0m
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5605213Z RuleID:      generic-api-key
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5605540Z Entropy:     4.701746
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5605852Z File:        settings.py
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5606262Z Line:        1
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5606561Z Commit:      e5bd229ef5f4e813452299b17ef3874284d6f7e5
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5606996Z Author:      Adewale Agbabiaka
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5607363Z Email:       whally149@gmail.com
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5607705Z Date:        2026-11-19T11:07:08Z
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5608257Z Fingerprint: e5bd229ef5f4e813452299b17ef3874284d6f7e5:settings.py:generic-api-key:1
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5609171Z Link:        https://github.com/antidotwale/github-actions-devsecops-pipeline/blob/e5bd229ef5f4e813452299b17ef3874284d6f7e5/settings.py#L1
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5609829Z 
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5617127Z ^[[90m11:07AM^[[0m ^[[32mINF^[[0m ^[[1m5 commits scanned.^[[0m
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5617806Z ^[[90m11:07AM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~151391 bytes (151.39 KB) in 122ms^[[0m
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5618398Z ^[[90m11:07AM^[[0m ^[[33mWRN^[[0m ^[[1mleaks found: 1^[[0m
+secrets-scan	Scan full git history	2026-11-19T11:07:32.5648174Z ##[error]Process completed with exit code 1.
+vuln-scan	Scan source, dependencies and config	﻿2026-11-19T11:07:26.7859089Z ##[group]Run ./trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --no-progress --skip-version-check --timeout 15m .
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7859966Z ^[[36;1m./trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --no-progress --skip-version-check --timeout 15m .^[[0m
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7877510Z shell: /usr/bin/bash -e {0}
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7877702Z env:
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7877848Z   GITLEAKS_VERSION: 8.30.1
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7878092Z   GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7878349Z   TRIVY_VERSION: 0.76.1
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7878578Z   TRIVY_SHA256: c7cbe3137fb8a48a17574bede3dd6beb16742d1e9772929940fc90082c39d9c0
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7878827Z   SEMGREP_VERSION: 1.186.0
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7878989Z   CHECKOV_VERSION: 3.4.5
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.7879144Z ##[endgroup]
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.8371941Z 2026-11-19T11:07:26Z	INFO	[vulndb] Need to update DB
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:26.8372584Z 2026-11-19T11:07:26Z	INFO	[vulndb] Downloading vulnerability DB...
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.1360326Z 2026-11-19T11:07:26Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.1361157Z 2026-11-19T11:07:31Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.2212152Z 2026-11-19T11:07:31Z	INFO	[vuln] Vulnerability scanning is enabled
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.2214087Z 2026-11-19T11:07:31Z	INFO	[misconfig] Misconfiguration scanning is enabled
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.2218787Z 2026-11-19T11:07:31Z	INFO	[checks-client] Need to update the checks bundle
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:31.2219750Z 2026-11-19T11:07:31Z	INFO	[checks-client] Downloading the checks bundle...
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.2701958Z 234.57 KiB / 234.57 KiB [------------------------------------------------------] 100.00% ? p/s 100ms2026-11-19T11:07:32Z	INFO	[secret] Secret scanning is enabled
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.2702793Z 2026-11-19T11:07:32Z	INFO	[secret] If your scanning is slow, please try '--scanners vuln,misconfig' to disable secret scanning
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.2703469Z 2026-11-19T11:07:32Z	INFO	[secret] Please see https://trivy.dev/docs/v0.76/guide/scanner/secret#recommendation for faster secret detection
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8935768Z 2026-11-19T11:07:32Z	WARN	[pip] Unable to find python `site-packages` directory. License detection is skipped.	err="site-packages directory not found"
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8954891Z 2026-11-19T11:07:32Z	INFO	Number of language-specific files	num=1
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8959132Z 2026-11-19T11:07:32Z	INFO	[pip] Detecting vulnerabilities...
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8959394Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8959987Z 2026-11-19T11:07:32Z	INFO	Detected config files	num=1
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8994880Z Report Summary
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8995057Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8995622Z ┌──────────────────┬────────────┬─────────────────┬─────────┬───────────────────┐
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8996142Z │      Target      │    Type    │ Vulnerabilities │ Secrets │ Misconfigurations │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8996697Z ├──────────────────┼────────────┼─────────────────┼─────────┼───────────────────┤
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8997496Z │ requirements.txt │    pip     │        1        │    -    │         -         │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8997999Z ├──────────────────┼────────────┼─────────────────┼─────────┼───────────────────┤
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8998447Z │ Dockerfile       │ dockerfile │        -        │    -    │         1         │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8998915Z └──────────────────┴────────────┴─────────────────┴─────────┴───────────────────┘
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999120Z Legend:
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999236Z - '-': Not scanned
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999389Z - '0': Clean (no security findings detected)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999620Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999651Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999710Z For OSS Maintainers: VEX Notice
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.8999860Z --------------------------------
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9000301Z If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9001437Z VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9001966Z Learn more and start using VEX: https://trivy.dev/docs/v0.76/guide/supply-chain/vex/repo#publishing-vex-documents
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002205Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002322Z To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002492Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002495Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002549Z requirements.txt (pip)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002715Z ======================
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002849Z Total: 1 (HIGH: 1, CRITICAL: 0)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9002940Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9003262Z ┌──────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9003800Z │ Library  │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9004615Z ├──────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9005143Z │ requests │ CVE-2018-18074 │ HIGH     │ fixed  │ 2.19.0            │ 2.20.0        │ python-requests: Redirect from HTTPS to HTTP does not remove │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9005589Z │          │                │          │        │                   │               │ Authorization header                                         │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9005989Z │          │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2018-18074                   │
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9006507Z └──────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9006814Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9006873Z Dockerfile (dockerfile)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007018Z =======================
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007154Z Tests: 20 (SUCCESSES: 19, FAILURES: 1)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007314Z Failures: 1 (HIGH: 1, CRITICAL: 0)
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007414Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007562Z DS-0002 (HIGH): Specify at least 1 USER command in Dockerfile with non-root user as argument
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9007854Z ════════════════════════════════════════
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9008287Z Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9008650Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9008729Z See https://avd.aquasec.com/misconfig/ds-0002
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9008944Z ────────────────────────────────────────
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9009054Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9009058Z 
+vuln-scan	Scan source, dependencies and config	2026-11-19T11:07:32.9101379Z ##[error]Process completed with exit code 1.
+sast	Run Semgrep	﻿2026-11-19T11:07:31.0202661Z ##[group]Run python3 -m venv "$RUNNER_TEMP/semgrep"
+sast	Run Semgrep	2026-11-19T11:07:31.0203100Z ^[[36;1mpython3 -m venv "$RUNNER_TEMP/semgrep"^[[0m
+sast	Run Semgrep	2026-11-19T11:07:31.0203546Z ^[[36;1m"$RUNNER_TEMP/semgrep/bin/pip" install --no-cache-dir "semgrep==${SEMGREP_VERSION}"^[[0m
+sast	Run Semgrep	2026-11-19T11:07:31.0204090Z ^[[36;1m"$RUNNER_TEMP/semgrep/bin/semgrep" scan --config p/python --config p/flask --metrics=off --error .^[[0m
+sast	Run Semgrep	2026-11-19T11:07:31.3887790Z shell: /usr/bin/bash -e {0}
+sast	Run Semgrep	2026-11-19T11:07:31.3888176Z env:
+sast	Run Semgrep	2026-11-19T11:07:31.3888739Z   GITLEAKS_VERSION: 8.30.1
+sast	Run Semgrep	2026-11-19T11:07:31.3889152Z   GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+sast	Run Semgrep	2026-11-19T11:07:31.3889534Z   TRIVY_VERSION: 0.76.1
+sast	Run Semgrep	2026-11-19T11:07:31.3889892Z   TRIVY_SHA256: c7cbe3137fb8a48a17574bede3dd6beb16742d1e9772929940fc90082c39d9c0
+sast	Run Semgrep	2026-11-19T11:07:31.3890303Z   SEMGREP_VERSION: 1.186.0
+sast	Run Semgrep	2026-11-19T11:07:31.3890552Z   CHECKOV_VERSION: 3.4.5
+sast	Run Semgrep	2026-11-19T11:07:31.3890816Z ##[endgroup]
+sast	Run Semgrep	2026-11-19T11:07:35.2427390Z Collecting semgrep==1.186.0
+sast	Run Semgrep	2026-11-19T11:07:35.2667587Z   Downloading semgrep-1.186.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl.metadata (22 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.2909339Z Collecting attrs>=21.3 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.2934867Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3057328Z Collecting boltons~=21.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3089278Z   Downloading boltons-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3240144Z Collecting certifi>=2026.10.19 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3271038Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3372715Z Collecting click-option-group~=0.5 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3397319Z   Downloading click_option_group-0.5.10-py3-none-any.whl.metadata (5.9 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3548984Z Collecting click~=8.4.2 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3573102Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3697871Z Collecting colorama~=0.4.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3723159Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3831675Z Collecting exceptiongroup~=1.2.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3856398Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.3944058Z Collecting glom>=23.3 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.3967460Z   Downloading glom-25.12.0-py3-none-any.whl.metadata (5.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.4173013Z Collecting jsonschema~=4.25.1 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.4199336Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.4377891Z Collecting mcp==1.29.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.4404772Z   Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.4599473Z Collecting opentelemetry-api~=1.37.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.4624494Z   Downloading opentelemetry_api-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.4815270Z Collecting opentelemetry-sdk~=1.37.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.4836758Z   Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.4997915Z Collecting opentelemetry-exporter-otlp-proto-http~=1.37.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.5023834Z   Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.5212422Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.5234311Z   Downloading opentelemetry_instrumentation_requests-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.5360477Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.5382506Z   Downloading opentelemetry_instrumentation_threading-0.66b2-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.5537192Z Collecting packaging>=21.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.5561483Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.5746160Z Collecting peewee~=3.14 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.5771554Z   Downloading peewee-3.19.0-py3-none-any.whl.metadata (7.0 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.5923731Z Collecting pyjwt<3,>=2.15.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.6060146Z   Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.6283472Z Collecting requests~=2.22 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.6320841Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.6738114Z Collecting rich>=13.5.2 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.6761678Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.7893041Z Collecting ruamel.yaml>=0.18.15 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.7919845Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.8176319Z Collecting ruamel.yaml.clib==0.2.15 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.8201209Z   Downloading ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.8298532Z Collecting semantic-version~=2.10.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.8322789Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.8447595Z Collecting structlog~=26.1.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.8469713Z   Downloading structlog-26.1.0-py3-none-any.whl.metadata (9.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.8695282Z Collecting tomli~=2.4.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.8719332Z   Downloading tomli-2.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.8875973Z Collecting typing-extensions~=4.2 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.8900997Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.9159715Z Collecting urllib3~=2.0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.9182558Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.9397582Z Collecting wcmatch~=8.3 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.9421094Z   Downloading wcmatch-8.5.2-py3-none-any.whl.metadata (4.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.9702171Z Collecting anyio>=4.5 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.9729139Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:35.9825847Z Collecting httpx-sse>=0.4 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:35.9850769Z   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.0035803Z Collecting httpx<1.0.0,>=0.27.1 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.0061076Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.0242732Z Collecting pydantic-settings>=2.5.2 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.0269760Z   Downloading pydantic_settings-2.16.3-py3-none-any.whl.metadata (4.0 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.1190871Z Collecting pydantic<3.0.0,>=2.11.0 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.1217668Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.1256079Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.5/141.5 kB 76.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:36.1437137Z Collecting python-multipart>=0.0.9 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.1464966Z   Downloading python_multipart-0.0.34-py3-none-any.whl.metadata (6.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.1656193Z Collecting sse-starlette>=1.6.1 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.1681450Z   Downloading sse_starlette-3.7.0-py3-none-any.whl.metadata (15 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.1986243Z Collecting starlette>=0.27 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.2011071Z   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.2137776Z Collecting typing-inspection>=0.4.1 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.2161272Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.2410056Z Collecting uvicorn>=0.31.1 (from mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.2436480Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.2707681Z Collecting face>=20.1.1 (from glom>=23.3->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.2733157Z   Downloading face-26.0.1-py3-none-any.whl.metadata (1.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.3247269Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema~=4.25.1->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.3276437Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.3496584Z Collecting referencing>=0.28.4 (from jsonschema~=4.25.1->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.3520305Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.5475170Z Collecting rpds-py>=0.7.1 (from jsonschema~=4.25.1->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.5504415Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.5878868Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.5906702Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.6159743Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.6183578Z   Downloading googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.6386750Z Collecting opentelemetry-exporter-otlp-proto-common==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.6408168Z   Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl.metadata (1.8 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.6598030Z Collecting opentelemetry-proto==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.6625742Z   Downloading opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.8361744Z Collecting protobuf<7.0,>=5.0 (from opentelemetry-proto==1.37.0->opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.8388033Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+sast	Run Semgrep	2026-11-19T11:07:36.8685641Z Collecting opentelemetry-instrumentation==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.8714822Z   Downloading opentelemetry_instrumentation-0.66b2-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.8895061Z Collecting opentelemetry-semantic-conventions==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.8941784Z   Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:36.9113485Z Collecting opentelemetry-util-http==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:36.9145977Z   Downloading opentelemetry_util_http-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.1794185Z Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b2->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.1825133Z   Downloading wrapt-2.5.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.1893503Z INFO: pip is looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+sast	Run Semgrep	2026-11-19T11:07:37.1946352Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.1977452Z   Downloading opentelemetry_instrumentation_requests-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2067120Z Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2100376Z   Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2159395Z Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2183944Z   Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2242813Z Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2266162Z   Downloading opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2437853Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2461356Z   Downloading opentelemetry_instrumentation_requests-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2552063Z Collecting opentelemetry-instrumentation==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2578973Z   Downloading opentelemetry_instrumentation-0.66b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2637302Z Collecting opentelemetry-semantic-conventions==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2659861Z   Downloading opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2715928Z Collecting opentelemetry-util-http==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2742248Z   Downloading opentelemetry_util_http-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.2917798Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.2940853Z   Downloading opentelemetry_instrumentation_requests-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.3031130Z Collecting opentelemetry-instrumentation==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.3057081Z   Downloading opentelemetry_instrumentation-0.65b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.3117611Z Collecting opentelemetry-semantic-conventions==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.3141937Z   Downloading opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.3696090Z Collecting opentelemetry-util-http==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.3725800Z   Downloading opentelemetry_util_http-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.3902052Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.3928827Z   Downloading opentelemetry_instrumentation_requests-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4020715Z Collecting opentelemetry-instrumentation==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4047794Z   Downloading opentelemetry_instrumentation-0.64b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4106824Z Collecting opentelemetry-semantic-conventions==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4130938Z   Downloading opentelemetry_semantic_conventions-0.64b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4187770Z Collecting opentelemetry-util-http==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4211432Z   Downloading opentelemetry_util_http-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4366737Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4389857Z   Downloading opentelemetry_instrumentation_requests-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4481125Z Collecting opentelemetry-instrumentation==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4506638Z   Downloading opentelemetry_instrumentation-0.63b1-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4566699Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4604128Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4659933Z Collecting opentelemetry-util-http==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4684001Z   Downloading opentelemetry_util_http-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4834764Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4861067Z   Downloading opentelemetry_instrumentation_requests-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.4951610Z Collecting opentelemetry-instrumentation==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.4975665Z   Downloading opentelemetry_instrumentation-0.63b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5033623Z Collecting opentelemetry-semantic-conventions==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5060998Z   Downloading opentelemetry_semantic_conventions-0.63b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5119136Z Collecting opentelemetry-util-http==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5141169Z   Downloading opentelemetry_util_http-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5291290Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5316614Z   Downloading opentelemetry_instrumentation_requests-0.62b1-py3-none-any.whl.metadata (2.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5405767Z Collecting opentelemetry-instrumentation==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5430579Z   Downloading opentelemetry_instrumentation-0.62b1-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5490221Z Collecting opentelemetry-semantic-conventions==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5511235Z   Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5570050Z Collecting opentelemetry-util-http==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5597588Z   Downloading opentelemetry_util_http-0.62b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.5719535Z INFO: pip is still looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+sast	Run Semgrep	2026-11-19T11:07:37.5772559Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.5940673Z   Downloading opentelemetry_instrumentation_requests-0.62b0-py3-none-any.whl.metadata (2.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6034121Z Collecting opentelemetry-instrumentation==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6059795Z   Downloading opentelemetry_instrumentation-0.62b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6120690Z Collecting opentelemetry-semantic-conventions==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6151085Z   Downloading opentelemetry_semantic_conventions-0.62b0-py3-none-any.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6208191Z Collecting opentelemetry-util-http==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6234773Z   Downloading opentelemetry_util_http-0.62b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6412734Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6436597Z   Downloading opentelemetry_instrumentation_requests-0.61b0-py3-none-any.whl.metadata (2.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6523899Z Collecting opentelemetry-instrumentation==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6551966Z   Downloading opentelemetry_instrumentation-0.61b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6612728Z Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6635816Z   Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6694107Z Collecting opentelemetry-util-http==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6724048Z   Downloading opentelemetry_util_http-0.61b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.6838012Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.61b0->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.6863403Z   Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7005515Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7029814Z   Downloading opentelemetry_instrumentation_requests-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7119028Z Collecting opentelemetry-instrumentation==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7192174Z   Downloading opentelemetry_instrumentation-0.60b1-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7254046Z Collecting opentelemetry-semantic-conventions==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7281029Z   Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7339640Z Collecting opentelemetry-util-http==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7360942Z   Downloading opentelemetry_util_http-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7536710Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7567967Z   Downloading opentelemetry_instrumentation_requests-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7655904Z Collecting opentelemetry-instrumentation==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7684479Z   Downloading opentelemetry_instrumentation-0.60b0-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7741231Z Collecting opentelemetry-semantic-conventions==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7763667Z   Downloading opentelemetry_semantic_conventions-0.60b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.7824911Z Collecting opentelemetry-util-http==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.7849469Z   Downloading opentelemetry_util_http-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8024380Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8055162Z   Downloading opentelemetry_instrumentation_requests-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8145103Z Collecting opentelemetry-instrumentation==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8170806Z   Downloading opentelemetry_instrumentation-0.59b0-py3-none-any.whl.metadata (7.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8230374Z Collecting opentelemetry-semantic-conventions==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8259598Z   Downloading opentelemetry_semantic_conventions-0.59b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8315363Z Collecting opentelemetry-util-http==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8340224Z   Downloading opentelemetry_util_http-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8441478Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+sast	Run Semgrep	2026-11-19T11:07:37.8496322Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8521152Z   Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8611872Z Collecting opentelemetry-instrumentation==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8635607Z   Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl.metadata (7.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8692196Z Collecting opentelemetry-semantic-conventions==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8716028Z   Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl.metadata (2.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.8772487Z Collecting opentelemetry-util-http==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.8797966Z   Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9009129Z INFO: pip is looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+sast	Run Semgrep	2026-11-19T11:07:37.9033986Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:37.9077005Z   Downloading opentelemetry_instrumentation_threading-0.66b1-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9175383Z   Downloading opentelemetry_instrumentation_threading-0.66b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9276633Z   Downloading opentelemetry_instrumentation_threading-0.65b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9380860Z   Downloading opentelemetry_instrumentation_threading-0.64b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9479989Z   Downloading opentelemetry_instrumentation_threading-0.63b1-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9570338Z   Downloading opentelemetry_instrumentation_threading-0.63b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9661485Z   Downloading opentelemetry_instrumentation_threading-0.62b1-py3-none-any.whl.metadata (2.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9701147Z INFO: pip is still looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+sast	Run Semgrep	2026-11-19T11:07:37.9757991Z   Downloading opentelemetry_instrumentation_threading-0.62b0-py3-none-any.whl.metadata (2.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9848836Z   Downloading opentelemetry_instrumentation_threading-0.61b0-py3-none-any.whl.metadata (2.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:37.9940010Z   Downloading opentelemetry_instrumentation_threading-0.60b1-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.0029574Z   Downloading opentelemetry_instrumentation_threading-0.60b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.0119165Z   Downloading opentelemetry_instrumentation_threading-0.59b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.0160068Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+sast	Run Semgrep	2026-11-19T11:07:38.0217125Z   Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl.metadata (2.1 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.2030504Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.2065103Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.3056209Z Collecting charset_normalizer<4,>=2 (from requests~=2.22->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.3084897Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.3100547Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 301.1 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:38.3249561Z Collecting idna<4,>=2.5 (from requests~=2.22->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.3284806Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.3571731Z Collecting markdown-it-py>=2.2.0 (from rich>=13.5.2->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.3595852Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.3768898Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.5.2->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.3800402Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.4307411Z Collecting bracex>=2.1.1 (from wcmatch~=8.3->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.4350525Z   Downloading bracex-3.2.3-py3-none-any.whl.metadata (3.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.5996228Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.6025340Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.6504447Z Collecting httpcore==1.* (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.6545021Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.6703616Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.6745088Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.7155955Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api~=1.37.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.7180598Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.7494414Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.5.2->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.7516811Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:38.7685929Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:38.7709315Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.3557254Z Collecting pydantic-core==2.50.4 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:39.3585528Z   Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.3946677Z Collecting python-dotenv>=1.2.2 (from pydantic-settings>=2.5.2->mcp==1.29.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:39.3973587Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.5132186Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.186.0)
+sast	Run Semgrep	2026-11-19T11:07:39.5178617Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.5802131Z Downloading semgrep-1.186.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl (74.7 MB)
+sast	Run Semgrep	2026-11-19T11:07:39.9401310Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.7/74.7 MB 183.3 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9432322Z Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9450334Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.4/223.4 kB 646.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9490805Z Downloading ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (788 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9515388Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 788.2/788.2 kB 708.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9543480Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9555944Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 522.2 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9580946Z Downloading boltons-21.0.0-py2.py3-none-any.whl (193 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9600130Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.7/193.7 kB 294.1 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9625165Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9642392Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 653.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9665156Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9678927Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.2/119.2 kB 526.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9702849Z Downloading click_option_group-0.5.10-py3-none-any.whl (11 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9725464Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9749089Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9772399Z Downloading glom-25.12.0-py3-none-any.whl (103 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9786306Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 585.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9808524Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9822011Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 601.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9845966Z Downloading opentelemetry_api-1.37.0-py3-none-any.whl (65 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9858412Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.7/65.7 kB 538.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9891559Z Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl (19 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9916509Z Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl (18 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9942959Z Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+sast	Run Semgrep	2026-11-19T11:07:39.9955462Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.5/72.5 kB 562.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:39.9985086Z Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl (12 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0010771Z Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl (33 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0034342Z Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0050941Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.0/208.0 kB 628.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0079606Z Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl (7.7 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0104025Z Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl (9.3 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0130609Z Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0145106Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.9/131.9 kB 656.7 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0169712Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0184187Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 632.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0208501Z Downloading peewee-3.19.0-py3-none-any.whl (411 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0261498Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 411.9/411.9 kB 114.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0285182Z Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0310217Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0322469Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 589.3 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0351039Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0369922Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 504.1 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0404280Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0420489Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 539.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0460766Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0493356Z Downloading structlog-26.1.0-py3-none-any.whl (73 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0505853Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.8/73.8 kB 542.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0530040Z Downloading tomli-2.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (253 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0553637Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.3/253.3 kB 210.6 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0577601Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0590247Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 471.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0613660Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0626891Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 623.3 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0653698Z Downloading wcmatch-8.5.2-py3-none-any.whl (39 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0677672Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0691895Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.5/134.5 kB 630.7 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0715482Z Downloading bracex-3.2.3-py3-none-any.whl (14 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0745443Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0763020Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 257.6/257.6 kB 675.4 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0788218Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+sast	Run Semgrep	2026-11-19T11:07:40.0895410Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 508.4 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0919430Z Downloading face-26.0.1-py3-none-any.whl (57 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0932389Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 542.3 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0954622Z Downloading googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.0971489Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 307.7/307.7 kB 666.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.0996501Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1008643Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 568.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1031887Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1044418Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 594.6 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1068994Z Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1094591Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1113370Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 494.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1133879Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1158725Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1181646Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1196530Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.0/97.0 kB 610.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1221463Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1241094Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 494.1/494.1 kB 692.7 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1269375Z Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+sast	Run Semgrep	2026-11-19T11:07:40.1326089Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 498.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1350396Z Downloading pydantic_settings-2.16.3-py3-none-any.whl (82 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1363012Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.7/82.7 kB 601.1 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1387513Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+sast	Run Semgrep	2026-11-19T11:07:40.1417770Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 660.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1442535Z Downloading python_multipart-0.0.34-py3-none-any.whl (32 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1465027Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1491672Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1509189Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 371.3/371.3 kB 692.6 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1532398Z Downloading sse_starlette-3.7.0-py3-none-any.whl (18 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1556455Z Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1568994Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 594.5 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1592953Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1615203Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1627878Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.4/87.4 kB 460.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1652144Z Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (88 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1664611Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.0/88.0 kB 567.8 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1689739Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1726309Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1742281Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.8/221.8 kB 668.2 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1825753Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1852315Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1877512Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1896945Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 323.4/323.4 kB 728.6 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.1922437Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1952724Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1981173Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+sast	Run Semgrep	2026-11-19T11:07:40.1993724Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 546.0 MB/s eta 0:00:00
+sast	Run Semgrep	2026-11-19T11:07:40.4439794Z Installing collected packages: peewee, boltons, zipp, wrapt, urllib3, typing-extensions, tomli, structlog, semantic-version, ruamel.yaml.clib, ruamel.yaml, rpds-py, python-multipart, python-dotenv, pyjwt, pygments, pycparser, protobuf, packaging, opentelemetry-util-http, mdurl, idna, httpx-sse, h11, face, exceptiongroup, colorama, click, charset_normalizer, certifi, bracex, attrs, annotated-types, wcmatch, uvicorn, typing-inspection, requests, referencing, pydantic-core, opentelemetry-proto, markdown-it-py, importlib-metadata, httpcore, googleapis-common-protos, glom, click-option-group, cffi, anyio, starlette, rich, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, httpx, cryptography, sse-starlette, pydantic-settings, opentelemetry-semantic-conventions, jsonschema, opentelemetry-sdk, opentelemetry-instrumentation, mcp, opentelemetry-instrumentation-threading, opentelemetry-instrumentation-requests, opentelemetry-exporter-otlp-proto-http, semgrep
+sast	Run Semgrep	2026-11-19T11:07:44.5664990Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boltons-21.0.0 bracex-3.2.3 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.4.2 click-option-group-0.5.10 colorama-0.4.6 cryptography-50.0.2 exceptiongroup-1.2.2 face-26.0.1 glom-25.12.0 googleapis-common-protos-1.76.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.20 importlib-metadata-8.7.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 markdown-it-py-4.3.0 mcp-1.29.0 mdurl-0.1.2 opentelemetry-api-1.37.0 opentelemetry-exporter-otlp-proto-common-1.37.0 opentelemetry-exporter-otlp-proto-http-1.37.0 opentelemetry-instrumentation-0.58b0 opentelemetry-instrumentation-requests-0.58b0 opentelemetry-instrumentation-threading-0.58b0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 opentelemetry-util-http-0.58b0 packaging-26.3 peewee-3.19.0 protobuf-6.33.6 pycparser-3.12 pydantic-2.14.3 pydantic-core-2.50.4 pydantic-settings-2.16.3 pygments-2.21.0 pyjwt-2.15.1 python-dotenv-1.2.4 python-multipart-0.0.34 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 ruamel.yaml-0.19.1 ruamel.yaml.clib-0.2.15 semantic-version-2.10.0 semgrep-1.186.0 sse-starlette-3.7.0 starlette-1.10.0 structlog-26.1.0 tomli-2.4.1 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 wcmatch-8.5.2 wrapt-1.17.3 zipp-4.1.2
+sast	Run Semgrep	2026-11-19T11:07:46.4516590Z                
+sast	Run Semgrep	2026-11-19T11:07:46.4517137Z                
+sast	Run Semgrep	2026-11-19T11:07:46.4517724Z ┌─────────────┐
+sast	Run Semgrep	2026-11-19T11:07:46.4518109Z │ Scan Status │
+sast	Run Semgrep	2026-11-19T11:07:46.4518615Z └─────────────┘
+sast	Run Semgrep	2026-11-19T11:07:46.4518964Z   Scanning 19 files tracked by git with 151 Code rules:
+sast	Run Semgrep	2026-11-19T11:07:46.4523730Z   Scanning 4 files with 151 python rules.
+sast	Run Semgrep	2026-11-19T11:07:46.6631404Z                    
+sast	Run Semgrep	2026-11-19T11:07:46.6632010Z                    
+sast	Run Semgrep	2026-11-19T11:07:46.6632665Z ┌─────────────────┐
+sast	Run Semgrep	2026-11-19T11:07:46.6632943Z │ 2 Code Findings │
+sast	Run Semgrep	2026-11-19T11:07:46.6633204Z └─────────────────┘
+sast	Run Semgrep	2026-11-19T11:07:46.6633472Z             
+sast	Run Semgrep	2026-11-19T11:07:46.6633748Z     utils.py
+sast	Run Semgrep	2026-11-19T11:07:46.6634216Z    ❯❯❱ python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+sast	Run Semgrep	2026-11-19T11:07:46.6634935Z           ❰❰ Blocking ❱❱
+sast	Run Semgrep	2026-11-19T11:07:46.6635372Z           Found 'subprocess' function 'run' with 'shell=True'. This is dangerous because this call will spawn
+sast	Run Semgrep	2026-11-19T11:07:46.6635979Z           the command using a shell process. Doing so propagates current shell settings and variables, which 
+sast	Run Semgrep	2026-11-19T11:07:46.6636597Z           makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.         
+sast	Run Semgrep	2026-11-19T11:07:46.6637174Z           Details: https://sg.run/J92w                                                                       
+sast	Run Semgrep	2026-11-19T11:07:46.6637634Z                                                                                                              
+sast	Run Semgrep	2026-11-19T11:07:46.6638050Z            ▶▶┆ Autofix ▶ False
+sast	Run Semgrep	2026-11-19T11:07:46.6638706Z             6┆ return subprocess.run("ping -c 1 " + host, shell=True, capture_output=True,
+sast	Run Semgrep	2026-11-19T11:07:46.6639235Z                text=True).stdout                                                          
+sast	Run Semgrep	2026-11-19T11:07:46.6639705Z    
+sast	Run Semgrep	2026-11-19T11:07:46.6640149Z     ❯❱ python.lang.security.insecure-hash-algorithms-md5.insecure-hash-algorithm-md5
+sast	Run Semgrep	2026-11-19T11:07:46.6640611Z           ❰❰ Blocking ❱❱
+sast	Run Semgrep	2026-11-19T11:07:46.6641066Z           Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is
+sast	Run Semgrep	2026-11-19T11:07:46.6641756Z           therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.               
+sast	Run Semgrep	2026-11-19T11:07:46.6642307Z           Details: https://sg.run/vYrY                                                                   
+sast	Run Semgrep	2026-11-19T11:07:46.6642754Z                                                                                                          
+sast	Run Semgrep	2026-11-19T11:07:46.6643182Z            14┆ return hashlib.md5(data.encode()).hexdigest()
+sast	Run Semgrep	2026-11-19T11:07:46.6643423Z 
+sast	Run Semgrep	2026-11-19T11:07:46.6643593Z                 
+sast	Run Semgrep	2026-11-19T11:07:46.6643866Z                 
+sast	Run Semgrep	2026-11-19T11:07:46.6644154Z ┌──────────────┐
+sast	Run Semgrep	2026-11-19T11:07:46.6644424Z │ Scan Summary │
+sast	Run Semgrep	2026-11-19T11:07:46.6644726Z └──────────────┘
+sast	Run Semgrep	2026-11-19T11:07:46.6645100Z ✅ Scan completed successfully.
+sast	Run Semgrep	2026-11-19T11:07:46.6645441Z  • Findings: 2 (2 blocking)
+sast	Run Semgrep	2026-11-19T11:07:46.6645744Z  • Rules run: 151
+sast	Run Semgrep	2026-11-19T11:07:46.6646027Z  • Targets scanned: 4
+sast	Run Semgrep	2026-11-19T11:07:46.6646314Z  • Parsed lines: ~100.0%
+sast	Run Semgrep	2026-11-19T11:07:46.6646687Z  • Scan was limited to files tracked by git
+sast	Run Semgrep	2026-11-19T11:07:46.6647330Z  • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+sast	Run Semgrep	2026-11-19T11:07:46.6647784Z Ran 151 rules on 4 files: 2 findings.
+sast	Run Semgrep	2026-11-19T11:07:46.8555249Z ##[error]Process completed with exit code 1.
+dockerfile-scan	Run Checkov on the Dockerfile	﻿2026-11-19T11:07:30.4521253Z ##[group]Run python3 -m venv "$RUNNER_TEMP/checkov"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.4521651Z ^[[36;1mpython3 -m venv "$RUNNER_TEMP/checkov"^[[0m
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.4522127Z ^[[36;1m"$RUNNER_TEMP/checkov/bin/pip" install --no-cache-dir "checkov==${CHECKOV_VERSION}"^[[0m
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.4522610Z ^[[36;1m"$RUNNER_TEMP/checkov/bin/checkov" -f Dockerfile --framework dockerfile --compact^[[0m
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7271183Z shell: /usr/bin/bash -e {0}
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7271670Z env:
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7271908Z   GITLEAKS_VERSION: 8.30.1
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7272292Z   GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7272666Z   TRIVY_VERSION: 0.76.1
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7272988Z   TRIVY_SHA256: c7cbe3137fb8a48a17574bede3dd6beb16742d1e9772929940fc90082c39d9c0
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7273368Z   SEMGREP_VERSION: 1.186.0
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7273654Z   CHECKOV_VERSION: 3.4.5
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:30.7273868Z ##[endgroup]
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.6681951Z Collecting checkov==3.4.5
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.7065043Z   Downloading checkov-3.4.5-py3-none-any.whl.metadata (26 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.7638198Z Collecting bc-jsonpath-ng==1.6.1 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.7724442Z   Downloading bc_jsonpath_ng-1.6.1-py3-none-any.whl.metadata (17 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8076007Z Collecting pycep-parser==0.5.1 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8153891Z   Downloading pycep_parser-0.5.1-py3-none-any.whl.metadata (2.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8294171Z Collecting tabulate<0.10.0,>=0.9.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8373021Z   Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8568862Z Collecting colorama<0.5.0,>=0.4.3 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8644954Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8788222Z Collecting termcolor<2.4.0,>=1.1.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8865436Z   Downloading termcolor-2.3.0-py3-none-any.whl.metadata (5.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.8991558Z Collecting junit-xml<2.0,>=1.9 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.9065777Z   Downloading junit_xml-1.9-py2.py3-none-any.whl.metadata (3.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.9221578Z Collecting dpath==2.1.3 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.9313309Z   Downloading dpath-2.1.3-py3-none-any.whl.metadata (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.9619843Z Collecting pyyaml<7.0.0,>=6.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:34.9694580Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3010412Z Collecting boto3==1.35.49 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3097434Z   Downloading boto3-1.35.49-py3-none-any.whl.metadata (6.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3392040Z Collecting gitpython<4.0.0,>=3.1.30 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3471516Z   Downloading gitpython-3.2.1-py3-none-any.whl.metadata (13 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3615947Z Collecting jmespath<2.0.0,>=1.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.3699388Z   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4100871Z Collecting tqdm<5.0.0,>=4.65.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4180253Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4200729Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.4/57.4 kB 425.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4431679Z Collecting packaging<24.0,>=23.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4511458Z   Downloading packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4712178Z Collecting cloudsplaining<0.8.0,>=0.7.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.4791821Z   Downloading cloudsplaining-0.7.0-py3-none-any.whl.metadata (21 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5021795Z Collecting networkx<2.7 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5103974Z   Downloading networkx-2.6.3-py3-none-any.whl.metadata (5.0 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5235907Z Collecting dockerfile-parse<3.0.0,>=2.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5313471Z   Downloading dockerfile_parse-2.0.1-py2.py3-none-any.whl.metadata (3.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5533193Z Collecting docker<8.0.0,>=6.0.1 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5607737Z   Downloading docker-7.2.0-py3-none-any.whl.metadata (3.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5769186Z Collecting configargparse<2.0.0,>=1.5.3 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.5846258Z   Downloading configargparse-1.10.1-py3-none-any.whl.metadata (25 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6103227Z Collecting argcomplete<4.0.0,>=3.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6178753Z   Downloading argcomplete-3.7.2-py3-none-any.whl.metadata (16 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6383087Z Collecting typing-extensions<5.0.0,>=4.5.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6459873Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6832274Z Collecting importlib-metadata<8.0.0,>=6.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.6909338Z   Downloading importlib_metadata-7.2.1-py3-none-any.whl.metadata (4.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7145927Z Collecting cachetools<6.0.0,>=5.2.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7220302Z   Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7623628Z Collecting cyclonedx-python-lib<8.0.0,>=6.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7700402Z   Downloading cyclonedx_python_lib-7.6.2-py3-none-any.whl.metadata (6.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7898969Z Collecting packageurl-python<0.14.0,>=0.11.1 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.7977544Z   Downloading packageurl_python-0.13.4-py3-none-any.whl.metadata (5.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.8187736Z Collecting click<9.0.0,>=8.1.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:35.8269918Z   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2424278Z Collecting aiohttp<3.15.0,>=3.8.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2504088Z   Downloading aiohttp-3.14.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2658175Z Collecting aiodns<4.0.0,>=3.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2735836Z   Downloading aiodns-3.6.1-py3-none-any.whl.metadata (5.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2861716Z Collecting aiomultiprocess<0.10.0,>=0.9.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.2943612Z   Downloading aiomultiprocess-0.9.1-py3-none-any.whl.metadata (4.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3088139Z Collecting schema<=0.7.5 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3162876Z   Downloading schema-0.7.5-py2.py3-none-any.whl.metadata (34 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3436031Z Collecting jsonschema<5.0.0,>=4.17.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3512177Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3703995Z Collecting prettytable<4.0.0,>=3.6.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.3781116Z   Downloading prettytable-3.19.0-py3-none-any.whl.metadata (37 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.4739019Z Collecting charset-normalizer<4.0.0,>=3.1.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.4824290Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.4838938Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 406.1 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.5114036Z Collecting requests<3.0.0,>=2.28.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.5192917Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.7582983Z Collecting yarl<2.0.0,>=1.9.1 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.7659980Z   Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.7689090Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.6/111.6 kB 68.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.7894231Z Collecting spdx-tools<0.9.0,>=0.8.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.7967526Z   Downloading spdx_tools-0.8.5-py3-none-any.whl.metadata (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.8141881Z Collecting license-expression<31.0.0,>=30.1.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.8220170Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.8507895Z Collecting rustworkx<1.0.0,>=0.13.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.8585664Z   Downloading rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.9528820Z Collecting pydantic<3.0.0,>=2.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.9608797Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.9625997Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.5/141.5 kB 560.5 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.9813582Z Collecting asteval==1.0.6 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:36.9889270Z   Downloading asteval-1.0.6-py3-none-any.whl.metadata (6.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0145379Z Collecting bc-detect-secrets==1.5.52 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0222322Z   Downloading bc_detect_secrets-1.5.52-py3-none-any.whl.metadata (23 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0530486Z Collecting urllib3>=1.26.20 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0609738Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0794223Z Collecting bc-python-hcl2==0.4.3 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.0872691Z   Downloading bc_python_hcl2-0.4.3-py3-none-any.whl.metadata (4.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1159827Z Collecting platformdirs<5.0.0,>=4.0.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1236256Z   Downloading platformdirs-4.14.7-py3-none-any.whl.metadata (5.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1397601Z Collecting ecdsa<1.0.0,>=0.19.0 (from checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1488090Z   Downloading ecdsa-0.19.2-py2.py3-none-any.whl.metadata (29 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1677334Z Collecting unidiff (from bc-detect-secrets==1.5.52->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1763218Z   Downloading unidiff-1.0.1-py3-none-any.whl.metadata (8.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1892044Z Collecting ply (from bc-jsonpath-ng==1.6.1->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.1970039Z   Downloading ply-3.11-py2.py3-none-any.whl.metadata (844 bytes)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.2123939Z Collecting decorator (from bc-jsonpath-ng==1.6.1->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.2197789Z   Downloading decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.2354631Z Collecting lark>=1.0.0 (from bc-python-hcl2==0.4.3->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.2433384Z   Downloading lark-1.3.1-py3-none-any.whl.metadata (1.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.6491008Z Collecting botocore<1.36.0,>=1.35.49 (from boto3==1.35.49->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.6586319Z   Downloading botocore-1.35.99-py3-none-any.whl.metadata (5.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.6809947Z Collecting s3transfer<0.11.0,>=0.10.0 (from boto3==1.35.49->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.6886796Z   Downloading s3transfer-0.10.4-py3-none-any.whl.metadata (1.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:37.9971573Z Collecting regex>=2022.1.18 (from pycep-parser==0.5.1->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.0052911Z   Downloading regex-2026.11.19-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.0067086Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 479.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.0739594Z Collecting pycares<5,>=4.9.0 (from aiodns<4.0.0,>=3.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.0828092Z   Downloading pycares-4.11.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (4.5 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.1828966Z Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.1910128Z   Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2041413Z Collecting aiosignal>=1.4.0 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2118238Z   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2300460Z Collecting attrs>=17.3.0 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2376049Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2865823Z Collecting frozenlist>=1.1.1 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.2943149Z   Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.4907208Z Collecting multidict<8.0,>=4.5 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.4992380Z   Downloading multidict-7.2.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.5522396Z Collecting propcache>=0.2.0 (from aiohttp<3.15.0,>=3.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.5600373Z   Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.5987582Z Collecting cached-property (from cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6066995Z   Downloading cached_property-2.0.1-py3-none-any.whl.metadata (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6214817Z Collecting click-option-group (from cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6290181Z   Downloading click_option_group-0.5.10-py3-none-any.whl.metadata (5.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6459045Z Collecting jinja2 (from cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6532702Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6727206Z Collecting markdown (from cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.6804562Z   Downloading markdown-3.11.3-py3-none-any.whl.metadata (5.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7056493Z Collecting policy-sentry<0.14,>=0.13.0 (from cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7132871Z   Downloading policy_sentry-0.13.2-py3-none-any.whl.metadata (1.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7513850Z Collecting py-serializable<2.0.0,>=1.1.0 (from cyclonedx-python-lib<8.0.0,>=6.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7598439Z   Downloading py_serializable-1.1.2-py3-none-any.whl.metadata (4.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7738910Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<8.0.0,>=6.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.7823548Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8169483Z Collecting six>=1.9.0 (from ecdsa<1.0.0,>=0.19.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8243623Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8468251Z Collecting gitdb<5,>=4.0.1 (from gitpython<4.0.0,>=3.1.30->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8548088Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8866154Z Collecting zipp>=0.5 (from importlib-metadata<8.0.0,>=6.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.8942522Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.9234681Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0.0,>=4.17.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.9312996Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.9568216Z Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.17.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:38.9650679Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.1556768Z Collecting rpds-py>=0.25.0 (from jsonschema<5.0.0,>=4.17.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.1638085Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.1876626Z Collecting boolean.py>=4.0 (from license-expression<31.0.0,>=30.1.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.1958354Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.3324224Z Collecting wcwidth>=0.3.5 (from prettytable<4.0.0,>=3.6.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.3404096Z   Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.3606440Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.3684987Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.8620269Z Collecting pydantic-core==2.50.4 (from pydantic<3.0.0,>=2.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.8701843Z   Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.8864638Z Collecting typing-inspection>=0.4.4 (from pydantic<3.0.0,>=2.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.8948543Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.9295271Z Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.28.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.9385219Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.9638269Z Collecting certifi>=2023.5.7 (from requests<3.0.0,>=2.28.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:39.9718430Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.1305814Z Collecting numpy<3,>=1.16.0 (from rustworkx<1.0.0,>=0.13.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.1385456Z   Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.1569188Z Collecting contextlib2>=0.5.5 (from schema<=0.7.5->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.1645433Z   Downloading contextlib2-21.6.0-py2.py3-none-any.whl.metadata (4.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.1947031Z Collecting beartype (from spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2021519Z   Downloading beartype-0.23.1-py3-none-any.whl.metadata (35 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2194428Z Collecting rdflib (from spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2271980Z   Downloading rdflib-7.6.0-py3-none-any.whl.metadata (12 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2417103Z Collecting semantic_version (from spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2498758Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2675390Z Collecting uritools (from spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2753411Z   Downloading uritools-7.0.0-py3-none-any.whl.metadata (5.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2897762Z Collecting xmltodict (from spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.2976603Z   Downloading xmltodict-1.0.4-py3-none-any.whl.metadata (14 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.5060172Z Collecting python-dateutil<3.0.0,>=2.1 (from botocore<1.36.0,>=1.35.49->boto3==1.35.49->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.5139828Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.5554297Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython<4.0.0,>=3.1.30->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.5648396Z   Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.6216924Z Collecting beautifulsoup4 (from policy-sentry<0.14,>=0.13.0->cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.6294144Z   Downloading beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.8078404Z Collecting orjson (from policy-sentry<0.14,>=0.13.0->cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.8159862Z   Downloading orjson-3.13.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (42 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.8174806Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 kB 458.1 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.8453035Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<2.0.0,>=1.1.0->cyclonedx-python-lib<8.0.0,>=6.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.8529345Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.9374964Z Collecting cffi>=1.5.0 (from pycares<5,>=4.9.0->aiodns<4.0.0,>=3.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:40.9451686Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.2245653Z Collecting MarkupSafe>=2.0 (from jinja2->cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.2321504Z   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.2860727Z Collecting pyparsing<4,>=2.1.0 (from rdflib->spdx-tools<0.9.0,>=0.8.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.2935981Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.3472017Z Collecting pycparser (from cffi>=1.5.0->pycares<5,>=4.9.0->aiodns<4.0.0,>=3.0.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.3562745Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.4250903Z Collecting soupsieve>=1.6.1 (from beautifulsoup4->policy-sentry<0.14,>=0.13.0->cloudsplaining<0.8.0,>=0.7.0->checkov==3.4.5)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.4328210Z   Downloading soupsieve-4.1.2-py3-none-any.whl.metadata (4.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.4751477Z Downloading checkov-3.4.5-py3-none-any.whl (2.3 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.4951378Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 125.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5028894Z Downloading asteval-1.0.6-py3-none-any.whl (22 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5107323Z Downloading bc_detect_secrets-1.5.52-py3-none-any.whl (126 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5123183Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.7/126.7 kB 698.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5201918Z Downloading bc_jsonpath_ng-1.6.1-py3-none-any.whl (29 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5289126Z Downloading bc_python_hcl2-0.4.3-py3-none-any.whl (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5370132Z Downloading boto3-1.35.49-py3-none-any.whl (139 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5383357Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.2/139.2 kB 706.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5474362Z Downloading dpath-2.1.3-py3-none-any.whl (17 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5553012Z Downloading pycep_parser-0.5.1-py3-none-any.whl (23 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5630663Z Downloading aiodns-3.6.1-py3-none-any.whl (8.0 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5707683Z Downloading aiohttp-3.14.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5756701Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 572.5 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5838326Z Downloading aiomultiprocess-0.9.1-py3-none-any.whl (17 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5916527Z Downloading argcomplete-3.7.2-py3-none-any.whl (43 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.5928622Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.3/43.3 kB 513.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6015751Z Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6091363Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6107511Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 257.6/257.6 kB 731.5 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6184667Z Downloading click-8.5.1-py3-none-any.whl (126 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6198754Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.2/126.2 kB 658.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6277054Z Downloading cloudsplaining-0.7.0-py3-none-any.whl (1.8 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6340743Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 348.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6418061Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6506529Z Downloading configargparse-1.10.1-py3-none-any.whl (49 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6519507Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.4/49.4 kB 369.9 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6597022Z Downloading cyclonedx_python_lib-7.6.2-py3-none-any.whl (361 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6621897Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 361.4/361.4 kB 273.7 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6697822Z Downloading docker-7.2.0-py3-none-any.whl (148 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6712634Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.8/148.8 kB 656.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6792646Z Downloading dockerfile_parse-2.0.1-py2.py3-none-any.whl (14 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6876259Z Downloading ecdsa-0.19.2-py2.py3-none-any.whl (150 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6891490Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.8/150.8 kB 728.9 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6967291Z Downloading gitpython-3.2.1-py3-none-any.whl (231 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.6981747Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.5/231.5 kB 745.2 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7057232Z Downloading importlib_metadata-7.2.1-py3-none-any.whl (25 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7134556Z Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7210039Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7223441Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 693.6 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7298526Z Downloading junit_xml-1.9-py2.py3-none-any.whl (7.1 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7373165Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7388762Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.6/120.6 kB 695.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7467755Z Downloading networkx-2.6.3-py3-none-any.whl (1.9 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7571919Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 210.9 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7646483Z Downloading packageurl_python-0.13.4-py3-none-any.whl (26 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7726474Z Downloading packaging-23.2-py3-none-any.whl (53 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7736951Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 444.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7813903Z Downloading platformdirs-4.14.7-py3-none-any.whl (89 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7824840Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.7/89.7 kB 656.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7901114Z Downloading prettytable-3.19.0-py3-none-any.whl (37 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.7980201Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8002240Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 494.1/494.1 kB 762.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8081473Z Downloading pydantic_core-2.50.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8131801Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 603.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8211830Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8235384Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 677.1 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8310557Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8327476Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 524.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8405271Z Downloading rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.4 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8533280Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 203.1 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8608316Z Downloading schema-0.7.5-py2.py3-none-any.whl (17 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8686218Z Downloading spdx_tools-0.8.5-py3-none-any.whl (286 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8702843Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 286.6/286.6 kB 550.5 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8775628Z Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8852050Z Downloading termcolor-2.3.0-py3-none-any.whl (6.9 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8928274Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.8940658Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 677.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9017783Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9031021Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 522.2 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9110004Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9124011Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 719.6 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9202795Z Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9216240Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 692.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9293671Z Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9390425Z Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9470447Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9547866Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9561884Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 594.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9639409Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:41.9717701Z Downloading botocore-1.35.99-py3-none-any.whl (13.3 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0000912Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 562.6 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0092803Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0106539Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 698.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0185686Z Downloading contextlib2-21.6.0-py2.py3-none-any.whl (13 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0263704Z Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0278872Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.4/242.4 kB 677.1 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0353892Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0365745Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 586.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0441810Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0453552Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 652.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0529070Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0608231Z Downloading lark-1.3.1-py3-none-any.whl (113 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0620025Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.2/113.2 kB 706.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0698929Z Downloading multidict-7.2.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (516 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0718746Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.8/516.8 kB 779.9 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.0795151Z Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1133572Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 447.6 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1211202Z Downloading policy_sentry-0.13.2-py3-none-any.whl (966 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1277439Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 966.6/966.6 kB 179.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1357477Z Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (250 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1372727Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.4/250.4 kB 786.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1450754Z Downloading py_serializable-1.1.2-py3-none-any.whl (22 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1528668Z Downloading pycares-4.11.0-cp312-cp312-manylinux_2_28_x86_64.whl (641 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1560990Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 641.1/641.1 kB 359.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1636343Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1717863Z Downloading regex-2026.11.19-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (809 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1750512Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 809.2/809.2 kB 419.2 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1828107Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1845691Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 371.3/371.3 kB 807.2 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1920908Z Downloading s3transfer-0.10.4-py3-none-any.whl (83 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.1933894Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.2/83.2 kB 620.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2013753Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2094326Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2179421Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2267281Z Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2292029Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 785.9/785.9 kB 732.5 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2368290Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2442357Z Downloading beartype-0.23.1-py3-none-any.whl (1.6 MB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2480298Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 623.7 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2553018Z Downloading cached_property-2.0.1-py3-none-any.whl (7.4 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2628683Z Downloading click_option_group-0.5.10-py3-none-any.whl (11 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2707502Z Downloading decorator-5.3.1-py3-none-any.whl (10 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2786887Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2800293Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 717.4 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2875380Z Downloading markdown-3.11.3-py3-none-any.whl (116 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2889229Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 116.8/116.8 kB 674.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2965006Z Downloading ply-3.11-py2.py3-none-any.whl (49 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.2977334Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.6/49.6 kB 461.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3050175Z Downloading rdflib-7.6.0-py3-none-any.whl (615 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3094279Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 615.4/615.4 kB 201.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3167030Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3244498Z Downloading unidiff-1.0.1-py3-none-any.whl (18 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3320291Z Downloading uritools-7.0.0-py3-none-any.whl (12 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3397737Z Downloading xmltodict-1.0.4-py3-none-any.whl (13 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3488810Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3503870Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.8/221.8 kB 751.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3579408Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3655894Z Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3735107Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3749973Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 kB 640.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3829889Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3845404Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 789.3 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.3935467Z Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4014235Z Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4026541Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.9/109.9 kB 669.2 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4102179Z Downloading orjson-3.13.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (130 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4115434Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.6/130.6 kB 668.0 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4192416Z Downloading soupsieve-4.1.2-py3-none-any.whl (59 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4204258Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.3/59.3 kB 553.7 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4281760Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.4293344Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 602.8 MB/s eta 0:00:00
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:42.8028604Z Installing collected packages: sortedcontainers, ply, boolean.py, zipp, xmltodict, wcwidth, urllib3, uritools, unidiff, typing-extensions, tqdm, termcolor, tabulate, soupsieve, smmap, six, semantic_version, rpds-py, regex, pyyaml, pyparsing, pycparser, propcache, platformdirs, packaging, packageurl-python, orjson, numpy, networkx, multidict, MarkupSafe, markdown, license-expression, lark, jmespath, idna, frozenlist, dpath, dockerfile-parse, defusedxml, decorator, contextlib2, configargparse, colorama, click, charset-normalizer, certifi, cachetools, cached-property, beartype, attrs, asteval, argcomplete, annotated-types, aiomultiprocess, aiohappyeyeballs, yarl, typing-inspection, schema, rustworkx, requests, referencing, rdflib, python-dateutil, pydantic-core, pycep-parser, py-serializable, prettytable, junit-xml, jinja2, importlib-metadata, gitdb, ecdsa, click-option-group, cffi, beautifulsoup4, bc-python-hcl2, bc-jsonpath-ng, aiosignal, spdx-tools, pydantic, pycares, policy-sentry, jsonschema-specifications, gitpython, docker, cyclonedx-python-lib, botocore, bc-detect-secrets, aiohttp, s3transfer, jsonschema, aiodns, boto3, cloudsplaining, checkov
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:49.6915280Z Successfully installed MarkupSafe-3.0.4 aiodns-3.6.1 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiomultiprocess-0.9.1 aiosignal-1.4.0 annotated-types-0.8.0 argcomplete-3.7.2 asteval-1.0.6 attrs-26.1.0 bc-detect-secrets-1.5.52 bc-jsonpath-ng-1.6.1 bc-python-hcl2-0.4.3 beartype-0.23.1 beautifulsoup4-4.15.0 boolean.py-5.0 boto3-1.35.49 botocore-1.35.99 cached-property-2.0.1 cachetools-5.5.2 certifi-2026.10.23 cffi-2.1.1 charset-normalizer-3.5.2 checkov-3.4.5 click-8.5.1 click-option-group-0.5.10 cloudsplaining-0.7.0 colorama-0.4.6 configargparse-1.10.1 contextlib2-21.6.0 cyclonedx-python-lib-7.6.2 decorator-5.3.1 defusedxml-0.7.1 docker-7.2.0 dockerfile-parse-2.0.1 dpath-2.1.3 ecdsa-0.19.2 frozenlist-1.8.0 gitdb-4.0.12 gitpython-3.2.1 idna-3.20 importlib-metadata-7.2.1 jinja2-3.1.6 jmespath-1.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 junit-xml-1.9 lark-1.3.1 license-expression-30.4.4 markdown-3.11.3 multidict-7.2.1 networkx-2.6.3 numpy-2.5.5 orjson-3.13.0 packageurl-python-0.13.4 packaging-23.2 platformdirs-4.14.7 ply-3.11 policy-sentry-0.13.2 prettytable-3.19.0 propcache-0.5.4 py-serializable-1.1.2 pycares-4.11.0 pycep-parser-0.5.1 pycparser-3.12 pydantic-2.14.3 pydantic-core-2.50.4 pyparsing-3.3.3 python-dateutil-2.9.0.post0 pyyaml-6.0.3 rdflib-7.6.0 referencing-0.37.0 regex-2026.11.19 requests-2.34.2 rpds-py-2026.9.1 rustworkx-0.18.1 s3transfer-0.10.4 schema-0.7.5 semantic_version-2.10.0 six-1.17.0 smmap-5.0.3 sortedcontainers-2.4.0 soupsieve-4.1.2 spdx-tools-0.8.5 tabulate-0.9.0 termcolor-2.3.0 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.5 unidiff-1.0.1 uritools-7.0.0 urllib3-2.8.0 wcwidth-0.9.4 xmltodict-1.0.4 yarl-1.25.1 zipp-4.1.2
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7240788Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7240874Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7241617Z        _               _
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7242096Z    ___| |__   ___  ___| | _______   __
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7242628Z   / __| '_ \ / _ \/ __| |/ / _ \ \ / /
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7243088Z  | (__| | | |  __/ (__|   < (_) \ V /
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7243435Z   \___|_| |_|\___|\___|_|\_\___/ \_/
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7243668Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7243860Z By Prisma Cloud | version: 3.4.5 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7244254Z Update available 3.4.5 -> 3.4.6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7244673Z Run pip3 install -U checkov to update 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7244954Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7244959Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7256687Z dockerfile scan results:
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7256956Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7257131Z Passed checks: 63, Failed checks: 1, Skipped checks: 0
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7257523Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7257795Z Check: CKV_DOCKER_11: "Ensure From Alias are unique for multistage builds."
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7258467Z 	PASSED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7258890Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7259820Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-from-alias-is-unique-for-multistage-builds
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7260846Z Check: CKV_DOCKER_7: "Ensure the base image uses a non latest version tag"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7261390Z 	PASSED for resource: Dockerfile.FROM
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7261761Z 	File: Dockerfile:1-1
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7262648Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-the-base-image-uses-a-non-latest-version-tag
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7263611Z Check: CKV_DOCKER_10: "Ensure that WORKDIR values are absolute paths"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7264101Z 	PASSED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7264710Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7265507Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-workdir-values-are-absolute-paths
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7266638Z Check: CKV_DOCKER_5: "Ensure update instructions are not use alone in the Dockerfile"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7267184Z 	PASSED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7267597Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7268608Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-update-instructions-are-not-used-alone-in-the-dockerfile
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7269627Z Check: CKV_DOCKER_9: "Ensure that APT isn't used"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7270039Z 	PASSED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7270380Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7271209Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-is-not-used
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7272017Z Check: CKV_DOCKER_1: "Ensure port 22 is not exposed"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7272491Z 	PASSED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7272843Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7273555Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-port-22-is-not-exposed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7274574Z Check: CKV_DOCKER_2: "Ensure that HEALTHCHECK instructions have been added to container images"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7275211Z 	PASSED for resource: Dockerfile.HEALTHCHECK
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7275639Z 	File: Dockerfile:14-15
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7276607Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-healthcheck-instructions-have-been-added-to-container-images
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7277695Z Check: CKV2_DOCKER_1: "Ensure that sudo isn't used"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7279049Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7279409Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7280085Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-dont-use-sudo
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7280784Z Check: CKV2_DOCKER_1: "Ensure that sudo isn't used"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7281179Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7281477Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7282186Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-dont-use-sudo
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7282856Z Check: CKV2_DOCKER_1: "Ensure that sudo isn't used"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7283200Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7283519Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7284093Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-dont-use-sudo
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7285040Z Check: CKV2_DOCKER_14: "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7285702Z 	PASSED for resource: Dockerfile.ENV
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7286005Z 	File: Dockerfile:2-3
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7286589Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7287487Z Check: CKV2_DOCKER_14: "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7288330Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7288696Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7289253Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7290199Z Check: CKV2_DOCKER_14: "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7291186Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7291712Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7292782Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7294540Z Check: CKV2_DOCKER_14: "Ensure that certificate validation isn't disabled for git by setting the environment variable 'GIT_SSL_NO_VERIFY' to any value"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7295758Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7296322Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7297409Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-git-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7299074Z Check: CKV2_DOCKER_17: "Ensure that 'chpasswd' is not used to set or remove passwords"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7299881Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7300400Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7301402Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/bc-docker-2-17
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7302779Z Check: CKV2_DOCKER_17: "Ensure that 'chpasswd' is not used to set or remove passwords"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7303606Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7304123Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7305117Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/bc-docker-2-17
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7306691Z Check: CKV2_DOCKER_17: "Ensure that 'chpasswd' is not used to set or remove passwords"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7307529Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7308192Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7309200Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/bc-docker-2-17
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7310867Z Check: CKV2_DOCKER_6: "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7311980Z 	PASSED for resource: Dockerfile.ENV
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7312524Z 	File: Dockerfile:2-3
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7313639Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7315364Z Check: CKV2_DOCKER_6: "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7316441Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7316987Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7318272Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7320030Z Check: CKV2_DOCKER_6: "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7321115Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7321615Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7322751Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7324503Z Check: CKV2_DOCKER_6: "Ensure that certificate validation isn't disabled with the NODE_TLS_REJECT_UNAUTHORIZED environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7325643Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7326168Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7327261Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-node-tls-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7329222Z Check: CKV2_DOCKER_12: "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7330326Z 	PASSED for resource: Dockerfile.ENV
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7330852Z 	File: Dockerfile:2-3
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7331959Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7333826Z Check: CKV2_DOCKER_12: "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7335016Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7335530Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7336627Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7338637Z Check: CKV2_DOCKER_12: "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7339742Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7340315Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7341385Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7343150Z Check: CKV2_DOCKER_12: "Ensure that certificate validation isn't disabled for npm via the 'NPM_CONFIG_STRICT_SSL' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7344274Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7344796Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7345937Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7348044Z Check: CKV2_DOCKER_16: "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7349123Z 	PASSED for resource: Dockerfile.ENV
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7349692Z 	File: Dockerfile:2-3
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7350862Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7352604Z Check: CKV2_DOCKER_16: "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7353700Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7354202Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7355338Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7357057Z Check: CKV2_DOCKER_16: "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7358912Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7359494Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7360583Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7362282Z Check: CKV2_DOCKER_16: "Ensure that certificate validation isn't disabled with pip via the 'PIP_TRUSTED_HOST' environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7363422Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7363980Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7365115Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-trusted-host
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7366944Z Check: CKV2_DOCKER_5: "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7368189Z 	PASSED for resource: Dockerfile.ENV
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7368792Z 	File: Dockerfile:2-3
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7370023Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7371774Z Check: CKV2_DOCKER_5: "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7372855Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7373375Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7374588Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7376555Z Check: CKV2_DOCKER_5: "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7377580Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7378328Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7379527Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7381347Z Check: CKV2_DOCKER_5: "Ensure that certificate validation isn't disabled with the PYTHONHTTPSVERIFY environment variable"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7382404Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7382923Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7384159Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-PYTHONHTTPSVERIFY-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7386170Z Check: CKV2_DOCKER_15: "Ensure that the yum and dnf package managers are not configured to disable SSL certificate validation via the 'sslverify' configuration option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7387639Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7388351Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7389389Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7391280Z Check: CKV2_DOCKER_15: "Ensure that the yum and dnf package managers are not configured to disable SSL certificate validation via the 'sslverify' configuration option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7392808Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7393327Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7394371Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7396196Z Check: CKV2_DOCKER_15: "Ensure that the yum and dnf package managers are not configured to disable SSL certificate validation via the 'sslverify' configuration option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7397528Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7398246Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7399291Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-ssl
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7401007Z Check: CKV2_DOCKER_7: "Ensure that packages with untrusted or missing signatures are not used by apk via the '--allow-untrusted' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7402154Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7402692Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7403775Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apk-trusted
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7405466Z Check: CKV2_DOCKER_7: "Ensure that packages with untrusted or missing signatures are not used by apk via the '--allow-untrusted' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7406613Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7407126Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7408354Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apk-trusted
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7410155Z Check: CKV2_DOCKER_7: "Ensure that packages with untrusted or missing signatures are not used by apk via the '--allow-untrusted' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7411241Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7411798Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7412866Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apk-trusted
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7414439Z Check: CKV2_DOCKER_4: "Ensure that certificate validation isn't disabled with the pip '--trusted-host' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7415437Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7415956Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7417069Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7418948Z Check: CKV2_DOCKER_4: "Ensure that certificate validation isn't disabled with the pip '--trusted-host' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7419934Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7420479Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7421537Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7423107Z Check: CKV2_DOCKER_4: "Ensure that certificate validation isn't disabled with the pip '--trusted-host' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7424068Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7424632Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7425751Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-pip-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7428117Z Check: CKV2_DOCKER_11: "Ensure that the '--force-yes' option is not used, as it disables signature validation and allows packages to be downgraded which can leave the system in a broken or inconsistent state"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7429690Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7430212Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7431256Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-force
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7433424Z Check: CKV2_DOCKER_11: "Ensure that the '--force-yes' option is not used, as it disables signature validation and allows packages to be downgraded which can leave the system in a broken or inconsistent state"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7435101Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7435632Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7436686Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-force
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7438939Z Check: CKV2_DOCKER_11: "Ensure that the '--force-yes' option is not used, as it disables signature validation and allows packages to be downgraded which can leave the system in a broken or inconsistent state"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7442464Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7442791Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7443303Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-force
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7443917Z Check: CKV2_DOCKER_3: "Ensure that certificate validation isn't disabled with wget"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7444305Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7444595Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7445064Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-wget-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7445637Z Check: CKV2_DOCKER_3: "Ensure that certificate validation isn't disabled with wget"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7445993Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7446259Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7446759Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-wget-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7447322Z Check: CKV2_DOCKER_3: "Ensure that certificate validation isn't disabled with wget"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7447669Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7448139Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7448666Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-wget-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7449250Z Check: CKV2_DOCKER_2: "Ensure that certificate validation isn't disabled with curl"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7449589Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7449854Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7450302Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-curl-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7450878Z Check: CKV2_DOCKER_2: "Ensure that certificate validation isn't disabled with curl"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7451405Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7451654Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7452092Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-curl-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7452663Z Check: CKV2_DOCKER_2: "Ensure that certificate validation isn't disabled with curl"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7453028Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7453312Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7453756Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-curl-secure
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7454433Z Check: CKV2_DOCKER_9: "Ensure that packages with untrusted or missing GPG signatures are not used by dnf, tdnf, or yum via the '--nogpgcheck' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7454956Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7455201Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7455637Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7456332Z Check: CKV2_DOCKER_9: "Ensure that packages with untrusted or missing GPG signatures are not used by dnf, tdnf, or yum via the '--nogpgcheck' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7456818Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7457096Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7457635Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7458524Z Check: CKV2_DOCKER_9: "Ensure that packages with untrusted or missing GPG signatures are not used by dnf, tdnf, or yum via the '--nogpgcheck' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7459015Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7459263Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7459775Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-yum-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7460436Z Check: CKV2_DOCKER_13: "Ensure that certificate validation isn't disabled for npm or yarn by setting the option strict-ssl to false"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7460878Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7461128Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7461583Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl2
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7462321Z Check: CKV2_DOCKER_13: "Ensure that certificate validation isn't disabled for npm or yarn by setting the option strict-ssl to false"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7462755Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7463025Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7463493Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl2
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7464164Z Check: CKV2_DOCKER_13: "Ensure that certificate validation isn't disabled for npm or yarn by setting the option strict-ssl to false"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7464626Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7464872Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7465320Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-npm-strict-ssl2
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7466045Z Check: CKV2_DOCKER_8: "Ensure that packages with untrusted or missing signatures are not used by apt-get via the '--allow-unauthenticated' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7466624Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7466904Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7467363Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-authenticated
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7468179Z Check: CKV2_DOCKER_8: "Ensure that packages with untrusted or missing signatures are not used by apt-get via the '--allow-unauthenticated' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7468743Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7469003Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7469460Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-authenticated
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7470204Z Check: CKV2_DOCKER_8: "Ensure that packages with untrusted or missing signatures are not used by apt-get via the '--allow-unauthenticated' option"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7470662Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7470919Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7471401Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-apt-authenticated
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7472221Z Check: CKV2_DOCKER_10: "Ensure that packages with untrusted or missing signatures are not used by rpm via the '--nodigest', '--nosignature', '--noverify', or '--nofiledigest' options"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7472772Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7473006Z 	File: Dockerfile:4-6
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7473466Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-rpm-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7474235Z Check: CKV2_DOCKER_10: "Ensure that packages with untrusted or missing signatures are not used by rpm via the '--nodigest', '--nosignature', '--noverify', or '--nofiledigest' options"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7474865Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7475125Z 	File: Dockerfile:7-7
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7475551Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-rpm-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7476319Z Check: CKV2_DOCKER_10: "Ensure that packages with untrusted or missing signatures are not used by rpm via the '--nodigest', '--nosignature', '--noverify', or '--nofiledigest' options"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7476872Z 	PASSED for resource: Dockerfile.RUN
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7477116Z 	File: Dockerfile:10-11
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7477573Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-docker-rpm-signed
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7478266Z Check: CKV_DOCKER_3: "Ensure that a user for the container has been created"
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7478655Z 	FAILED for resource: Dockerfile.
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7478895Z 	File: Dockerfile:1-16
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7479433Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-a-user-for-the-container-has-been-created
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:52.7479933Z 
+dockerfile-scan	Run Checkov on the Dockerfile	2026-11-19T11:07:53.0329032Z ##[error]Process completed with exit code 1.
