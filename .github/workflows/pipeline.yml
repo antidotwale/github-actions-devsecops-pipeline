@@ -95,6 +95,12 @@ jobs:
           ./trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --no-progress --skip-version-check --timeout 15m .
       - name: Build image
         run: docker build -t devsecops-demo:ci .
+      - name: Smoke test the container
+        run: |
+          docker run -d --rm --name smoke -p 8000:8000 devsecops-demo:ci
+          curl -fsS --retry 10 --retry-connrefused --retry-delay 1 http://127.0.0.1:8000/health
+          test "$(docker exec smoke id -u)" = "10001"
+          docker stop smoke
       - name: Write full image report and SBOM
         run: |
           mkdir -p reports
