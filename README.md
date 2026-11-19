@@ -18,7 +18,7 @@ Five jobs run in parallel on every pull request and every push to main. Any red 
 | secrets-scan | Gitleaks 8.30.1 | secrets anywhere in the git history |
 | sast | Semgrep 1.186.0 | insecure code patterns (python and flask rule sets) |
 | dockerfile-scan | Checkov 3.4.5 | Dockerfile best practice |
-| vuln-scan | Trivy 0.76.1 | source, dependencies and config, then the built image, plus an SBOM |
+| vuln-scan | Trivy 0.76.1 | source, dependencies and config, then the built image (started and checked with a smoke test), plus an SBOM |
 
 Image gate policy: any CRITICAL fails the build. A HIGH fails the build only when a fix exists. Findings with no fix yet are written to a report and do not block, because a pipeline that is red forever gets ignored.
 
@@ -60,6 +60,8 @@ Semgrep reported 2 findings for the 3 patterns I planted. I do not know why it m
 
 A second lesson: after the PR, main went red. Gitleaks scans every branch it can see, so the planted secret on the demo branch failed the scan on main. Deleting the branch fixed it.
 
+A third lesson: Dependabot opened a pull request bumping the base image to python 3.15-slim and it passed every gate, but my unit tests run on the GitHub runner's Python, not inside the image. So I added a smoke test that starts the container, calls /health and checks it runs as uid 10001. My first version failed on main with a connection reset. The most likely reason is that the port accepted the connection before gunicorn was listening, and curl does not retry a reset by default. I fixed the test with --retry-all-errors, not the app.
+
 ## What I would improve
 
 1. Scan only the pull request commit range for secrets, and run the full history scan on a schedule.
@@ -67,6 +69,7 @@ A second lesson: after the PR, main went red. Gitleaks scans every branch it can
 3. Sign the image and attach the SBOM (planned in supply-chain-sbom-signing).
 4. Add dynamic testing (planned in dast-zap-baseline-pipeline) and SonarQube (planned in sonarqube-self-hosted-lab).
 5. Give accepted risks an owner and an expiry date.
+6. Run the unit tests inside the container image, so they use the same Python as production.
 
 ## Evidence
 
